@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <!-- User Input -->
+    <h1>Search for tweets</h1>
+    <form id="search form" action="/search-tweets" method="POST" enctype="multipart/form-data">
+
+    <label for="date-search">Search date:</label>
+    <input type="date" id="dsearch" name="dsearch" value="2019-01-01" min="2019-01-01" max="2020-12-31">
+
+    <label for="kwords">Keyword</label>
+    <input type="text" id="kword" name="kword"></input>
+
+    <label for="location">Country</label>
+    <select name="location" id="location">
+        <option value="world">Worldwide</option>
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="ireland">India</option>
+        <option value="india">Ireland</option>
+        <option value="uk">UK</option>
+        <option value="usa">USA</option>
+    </select>
+
+    <button type="submit" id="search-btn" class="btn btn-primary btn-sm btn-block">Search</button>
+    </form>
+    <hr>
+    <hr>
+    <!-- Part one -->
+    <h1>Most liked Tweets</h1>
+     <textarea readonly class="form-control" name='tweetsOut' id='newsOut' rows="3">
+     {{ tweetsout }}
+    </textarea>
+    <!-- Part two -->
+    <h1>Related News</h1>
+     <textarea readonly class="form-control" name='newsOut' id='newsOut' rows="3">
+         {{ newsout }}
+     </textarea>
+{% endblock %}

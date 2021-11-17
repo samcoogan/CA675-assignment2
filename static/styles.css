@@ -1,0 +1,36 @@
+*{
+    font-family: Quicksand, Consolas, Courier;
+}
+
+body{
+    background:#504DA8;
+}
+
+.jumbotron{
+    margin:30px;
+    background:#aed4be;
+}
+input form{
+    background:#D1D9DA;
+}
+h1{
+	background:#D1D9FF;
+	text-align: center;
+	margin:20px;
+}
+h2{
+    color:red;
+    text-align: center;
+}
+#queue{
+    font-size: x-small;
+}
+#dsearch{
+    margin-left: 5px;
+    margin-right: 75px;
+}
+#kword{
+    margin-right: 75px;
+}
+#location{
+}
