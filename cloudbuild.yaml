@@ -20,6 +20,6 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'buildapp', '--image', 'gcr.io/pelagic-campus-331914/twapp', '--region', 'europe-west1-d','--port','80']
+  args: ['run', 'deploy', 'buildapp', '--image', 'gcr.io/pelagic-campus-331914/twapp', '--region', 'europe-west1-d']
 images:
 - gcr.io/pelagic-campus-331914/twapp
